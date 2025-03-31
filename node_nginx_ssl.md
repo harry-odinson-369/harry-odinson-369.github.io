@@ -3,7 +3,7 @@
 > Steps to deploy a Node.js app to [Database Mart](https://www.databasemart.com/) using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
 
 ## 1. Sign up for VPS or Dedicated Server with Linux Ubuntu OS
-In this tutorial is using [Database Mart VPS](https://www.databasemart.com/vps-hosting)
+In this tutorial I prefer to buy VPS from [Database Mart VPS](https://www.databasemart.com/vps-hosting).
 
 ## 2. Connect to the ordered VPS server using ssh remote
 Open cmd or terminal in Windows. but I prefer to use terminal in this case and it recommended.
