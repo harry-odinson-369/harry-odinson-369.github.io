@@ -176,7 +176,7 @@ It may take a bit to propogate. after that you should be able to access your web
 
 ## 10. Add SSL with LetsEncrypt
 ```bash
-# Install necessary certbot
+# Install certbot
 sudo apt install certbot python3-certbot-nginx
 
 # Run Certbot to obtain and install the SSL certificate for your domain.
