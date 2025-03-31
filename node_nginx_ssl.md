@@ -71,7 +71,7 @@ cd yourproject
 # Now we can start the nodejs app in the current project directory by run the command below.
 pm2 start "npm start"
 
-# Useful command for pm2 👇
+# Useful commands for pm2 👇
 
 # List all processing instance
 pm2 list
