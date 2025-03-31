@@ -185,4 +185,4 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 certbot renew --dry-run
 ```
 
-Now visit https://yourdomain.com and you should see your Node app
+Now visit https://domain.com and you should see your Node app.
