@@ -186,7 +186,7 @@ sudo certbot --nginx -d domain.com -d www.domain.com
 - Certbot will interactively ask you for information and configure NGINX to use the obtained certificate.
 - Certbot will ask if you want to redirect HTTP traffic to HTTPS. Choose the appropriate option based on your preference. Redirecting is recommended for better security.
 
-You can verify that the automatic renewal process works by running the following command:
+You can verify that the automatic renewal process works by running the following command (Optional):
 ```bash
 # Only valid for 90 days, Renewal the ssl with the command below.
 sudo certbot renew --dry-run
