@@ -11,7 +11,7 @@ Open cmd or terminal in Windows. but I prefer to use terminal in this case and i
 # I am using administrator as username for my vps. but in some vps provider using root as username.
 ssh administrator@vps_ip_address
 ```
-After the ssh connected sucessfully, now we need to run two commands below (Recommended).
+After the ssh connected sucessfully, now we need to run two commands below. I recommended to run these command before do anything when you buy a new VPS or Dedicated Linux Server.
 ```bash
 # Check for the dependencies update
 sudo apt update
