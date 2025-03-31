@@ -11,7 +11,6 @@ Open cmd or terminal in Windows. but I prefer to use terminal in this case and i
 # I am using administrator as username for my vps. but in some vps provider using root as username.
 ssh administrator@vps_ip_address
 ```
-Next step are run after we connected the ssh remote sucessfully.
 
 ## 3. Install Node/NPM into the VPS Unbuntu server
 ```bash
