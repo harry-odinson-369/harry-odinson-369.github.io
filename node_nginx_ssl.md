@@ -11,6 +11,7 @@ https://m.do.co/c/5424d440c63a
 
 ## 3. Install Node/NPM
 ```
+bash
 # Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 # in lieu of restarting the shell
