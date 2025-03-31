@@ -109,7 +109,7 @@ sudo apt install nginx
 sudo nano /etc/nginx/sites-available/default
 ```
 Add the following configuration to the location part of the server block
-```
+```nginxconf
     server_name yourdomain.com www.yourdomain.com;
 
     location / {
