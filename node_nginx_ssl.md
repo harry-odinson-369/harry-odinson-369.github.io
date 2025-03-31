@@ -30,12 +30,12 @@ npm -v # Should print "10.8.2".
 
 ## 4. Clone your project from Github
 There are a few ways to get your files on to the server, I would suggest using Git
-```
+```bash
 git clone yourproject.git
 ```
 
 ### 5. Install dependencies and test app
-```
+```bash
 cd yourproject
 npm install
 npm start (or whatever your start command)
