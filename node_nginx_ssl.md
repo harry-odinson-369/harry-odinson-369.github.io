@@ -179,7 +179,8 @@ It may take a bit to propogate. after that you should be able to access your web
 # Install necessary certbot
 sudo apt install certbot python3-certbot-nginx
 
-# Run Certbot to obtain and install the SSL certificate for your domain. Replace `domain.com` and `www.domain.com` with your actual domain name that you buy from step 9.
+# Run Certbot to obtain and install the SSL certificate for your domain.
+# Replace `domain.com` and `www.domain.com` with your actual domain name that you buy from step 9.
 sudo certbot --nginx -d domain.com -d www.domain.com
 ```
 - Certbot will interactively ask you for information and configure NGINX to use the obtained certificate.
