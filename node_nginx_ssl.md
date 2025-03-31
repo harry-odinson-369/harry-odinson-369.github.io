@@ -5,10 +5,14 @@
 ## 1. Sign up for VPS or Dedicated Server with Linux Ubuntu OS
 In this tutorial is using [Database Mart VPS](https://www.databasemart.com/vps-hosting)
 
-## 2. Create a droplet and log in via ssh
- I will be using the root user, but would suggest creating a new user
+## 2. Connect to the ordered VPS server using ssh remote
+Open cmd or terminal in Windows. but I prefer to use terminal in this case and it recommended.
+```bash
+# I am using administrator as username for my vps. but in some vps provider using root as username.
+ssh administrator@vps_ip_address
+```
 
-## 3. Install Node/NPM
+## 3. Install Node/NPM into the VPS Unbuntu server
 ```bash
 # Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
