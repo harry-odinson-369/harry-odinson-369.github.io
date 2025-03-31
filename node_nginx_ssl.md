@@ -2,9 +2,8 @@
 
 > Steps to deploy a Node.js app to DigitalOcean using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
 
-## 1. Sign up for Digital Ocean
-If you use the referal link below, you get $10 free (1 or 2 months)
-https://m.do.co/c/5424d440c63a
+## 1. Sign up for VPS or Dedicated Server with Linux Ubuntu OS
+In this tutorial is using [Database Mart VPS](https://www.databasemart.com/vps-hosting)
 
 ## 2. Create a droplet and log in via ssh
  I will be using the root user, but would suggest creating a new user
