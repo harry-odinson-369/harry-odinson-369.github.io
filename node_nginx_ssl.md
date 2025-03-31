@@ -175,7 +175,7 @@ Now add some dns record to the domain:
 It may take a bit to propogate. after that you should be able to access your website through the domain name as well.
 
 ## 10. Add SSL with LetsEncrypt
-```
+```bash
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install python-certbot-nginx
