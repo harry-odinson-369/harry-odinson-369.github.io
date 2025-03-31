@@ -189,7 +189,7 @@ sudo certbot --nginx -d domain.com -d www.domain.com
 You can verify that the automatic renewal process works by running the following command:
 ```bash
 # Only valid for 90 days, Renewal the ssl with the command below.
-certbot renew --dry-run
+sudo certbot renew --dry-run
 ```
 
 Now visit https://domain.com and you should see your Node app.
