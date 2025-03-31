@@ -11,6 +11,14 @@ Open cmd or terminal in Windows. but I prefer to use terminal in this case and i
 # I am using administrator as username for my vps. but in some vps provider using root as username.
 ssh administrator@vps_ip_address
 ```
+After the ssh connected sucessfully, now we need to run two commands below (Recommended).
+```bash
+# Check for the dependencies update
+sudo apt update
+
+# Upgrade linux dependencies to the latest version
+sudo apt upgrade 
+```
 
 ## 3. Install Node/NPM into the VPS Unbuntu server
 ```bash
@@ -164,8 +172,7 @@ Now add some dns record to the domain:
 - Add A record for @ and value is the vps ip address.
 - Add A record for wwww and value is the vps ip address same as A record above.
 
-It may take a bit to propogate
-And you can
+It may take a bit to propogate. after that you should be able to access your website through the domain name as well.
 
 10. Add SSL with LetsEncrypt
 ```
@@ -174,7 +181,7 @@ sudo apt-get update
 sudo apt-get install python-certbot-nginx
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 
-# Only valid for 90 days, test the renewal process with
+# Only valid for 90 days, Renewal the ssl with the command below.
 certbot renew --dry-run
 ```
 
