@@ -1,6 +1,6 @@
-# Node.js Deployment
+# Node.js NGINX Deployment 
 
-> Steps to deploy a Node.js app to DigitalOcean using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
+> Steps to deploy a Node.js app to [Database Mart](https://www.databasemart.com/) using PM2, NGINX as a reverse proxy and an SSL from LetsEncrypt
 
 ## 1. Sign up for VPS or Dedicated Server with Linux Ubuntu OS
 In this tutorial is using [Database Mart VPS](https://www.databasemart.com/vps-hosting)
