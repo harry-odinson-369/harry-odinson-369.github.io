@@ -34,20 +34,23 @@ npm -v # Should print "10.8.2".
 ## 4. Clone your project from Github
 There are a few ways to get your files on to the server, I would suggest using Git
 ```bash
+# Clone your nodejs project from github repository.
 git clone yourproject.git
 ```
 
 ### 5. Install dependencies and test app
 ```bash
+# Navigate to the nodejs project directory.
 cd yourproject
 
+# Now install all the necessary dependencies in the package.json
 npm install
 
-#or whatever your start command
+# Run the app with the start command.
 npm start
 
-# stop app
-ctrl+C
+# Stop app
+Ctrl + C
 ```
 ## 6. Setup PM2 process manager to keep your app running
 ```bash
