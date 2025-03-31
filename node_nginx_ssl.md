@@ -11,8 +11,17 @@ https://m.do.co/c/5424d440c63a
 
 ## 3. Install Node/NPM
 ```
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
-sudo apt-get install -y nodejs
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+# Download and install Node.js:
+nvm install 20
+# Verify the Node.js version:
+node -v # Should print "v20.19.0".
+nvm current # Should print "v20.19.0".
+# Verify npm version:
+npm -v # Should print "10.8.2".
 ```
 
 ## 4. Clone your project from Github
