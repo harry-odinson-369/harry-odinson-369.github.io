@@ -170,11 +170,11 @@ Now goto buy a domain name from any domain provider. but in this case I prefer t
 
 Now add some dns record to the domain:
 - Add A record for @ and value is the vps ip address.
-- Add A record for wwww and value is the vps ip address same as A record above.
+- Add A record for www and value is the vps ip address same as A record above.
 
 It may take a bit to propogate. after that you should be able to access your website through the domain name as well.
 
-10. Add SSL with LetsEncrypt
+## 10. Add SSL with LetsEncrypt
 ```
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
