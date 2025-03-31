@@ -10,8 +10,7 @@ https://m.do.co/c/5424d440c63a
  I will be using the root user, but would suggest creating a new user
 
 ## 3. Install Node/NPM
-```
-bash
+```bash
 # Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 # in lieu of restarting the shell
