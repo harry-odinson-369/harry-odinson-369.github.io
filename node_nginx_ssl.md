@@ -113,7 +113,7 @@ Add the following configuration to the location part of the server block
 server_name domain.com www.domain.com;
 
 location / {
-    proxy_pass http://localhost:5000; #whatever port your app runs on
+    proxy_pass http://localhost:8080; #whatever port your app runs on
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';
@@ -132,7 +132,8 @@ server {
 	root /var/www/html;
         
 	index index.html index.htm index.nginx-debian.html;
-        
+
+        # domain.com and www.domain.com is the domain that we will buy in the step 9 below.
 	server_name domain.com www.domain.com;
         
         location / {
@@ -154,25 +155,17 @@ sudo nginx -t
 sudo service nginx restart
 ```
 
-### You should now be able to visit your IP with no port (port 80) and see your app. Now let's add a domain
+### You should now be able to visit your IP with no port (port 80) and see your app.
 
-## 9. Add domain in Digital Ocean
-In Digital Ocean, go to networking and add a domain
+## 9. Add custom domain name
+Now goto buy a domain name from any domain provider. but in this case I prefer to use [Namecheap](https://namecheap.com) as domain provider.
 
-Add an A record for @ and for www to your droplet
-
-
-## Register and/or setup domain from registrar
-I prefer Namecheap for domains. Please use this affiliate link if you are going to use them
-https://namecheap.pxf.io/c/1299552/386170/5618
-
-Choose "Custom nameservers" and add these 3
-
-* ns1.digitalocean.com
-* ns2.digitalocean.com
-* ns3.digitalocean.com
+Now add some dns record to the domain:
+- Add A record for @ and value is the vps ip address.
+- Add A record for wwww and value is the vps ip address same as A record above.
 
 It may take a bit to propogate
+And you can
 
 10. Add SSL with LetsEncrypt
 ```
