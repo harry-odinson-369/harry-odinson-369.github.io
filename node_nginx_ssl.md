@@ -37,23 +37,23 @@ git clone yourproject.git
 ### 5. Install dependencies and test app
 ```bash
 cd yourproject
+
 npm install
-npm start (or whatever your start command)
+
+npm start #or whatever your start command
+
 # stop app
 ctrl+C
 ```
 ## 6. Setup PM2 process manager to keep your app running
-```
+```bash
 sudo npm i pm2 -g
-pm2 start app (or whatever your file name)
 
-# Other pm2 commands
-pm2 show app
-pm2 status
-pm2 restart app
-pm2 stop app
-pm2 logs (Show log stream)
-pm2 flush (Clear logs)
+cd yourproject
+
+pm2 start "npm start"
+
+
 
 # To make sure app starts when reboot
 pm2 startup ubuntu
