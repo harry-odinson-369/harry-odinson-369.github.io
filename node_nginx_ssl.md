@@ -11,11 +11,8 @@ https://m.do.co/c/5424d440c63a
 
 ## 3. Install Node/NPM
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-
-sudo apt install nodejs
-
-node --version
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
+sudo apt-get install -y nodejs
 ```
 
 ## 4. Clone your project from Github
