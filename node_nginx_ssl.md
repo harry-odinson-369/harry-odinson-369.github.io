@@ -176,11 +176,16 @@ It may take a bit to propogate. after that you should be able to access your web
 
 ## 10. Add SSL with LetsEncrypt
 ```bash
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt-get update
-sudo apt-get install python-certbot-nginx
-sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+# Install necessary certbot
+sudo apt install certbot python3-certbot-nginx
 
+# Run Certbot to obtain and install the SSL certificate for your domain. Replace `domain.com` and `www.domain.com` with your actual domain name that you buy from step 9.
+sudo certbot --nginx -d domain.com -d www.domain.com
+```
+- Certbot will interactively ask you for information and configure NGINX to use the obtained certificate.
+- Certbot will ask if you want to redirect HTTP traffic to HTTPS. Choose the appropriate option based on your preference. Redirecting is recommended for better security.
+  
+```bash
 # Only valid for 90 days, Renewal the ssl with the command below.
 certbot renew --dry-run
 ```
