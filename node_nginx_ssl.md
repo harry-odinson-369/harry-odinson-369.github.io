@@ -40,20 +40,36 @@ cd yourproject
 
 npm install
 
-npm start #or whatever your start command
+#or whatever your start command
+npm start
 
 # stop app
 ctrl+C
 ```
 ## 6. Setup PM2 process manager to keep your app running
 ```bash
-sudo npm i pm2 -g
+# Install pm2 to manage and monitor the nodejs app.
+sudo npm install -g pm2
 
+# Navigate to the current app project directory.
 cd yourproject
 
+# Now we can start the nodejs app in the current project directory by run the command below.
 pm2 start "npm start"
 
+# Useful command for pm2 👇
 
+# List all processing instance
+pm2 list
+
+# Check processing instance status
+pm2 status
+
+# Stop the current processing instance with id 0
+pm2 stop 0
+
+# Delete the current processing instance with id 0
+pm2 delete 0
 
 # To make sure app starts when reboot
 pm2 startup ubuntu
