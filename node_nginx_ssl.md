@@ -134,8 +134,8 @@ location / {
 ```
 The config file should be look like this
 ```nginxconf
-# Default server configuration
-#
+# Server Configuration 
+# Also Support with WebSocket Server
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
