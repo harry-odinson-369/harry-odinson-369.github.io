@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center text-white">
+  <div class="text-center p-6 bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl max-w-md w-full animate-fadeIn">
+    <h1 class="text-4xl font-bold mb-4">Welcome!</h1>
+    <p class="text-lg mb-6">
+      Explore our apps and discover something amazing for you on Google Play.
+    </p>
+    <button 
+      onclick="window.open('https://play.google.com/store/apps/dev?id=6185357574634415062', '_blank')" 
+      class="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+      Visit Our Apps
+    </button>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</body>
+</html>
