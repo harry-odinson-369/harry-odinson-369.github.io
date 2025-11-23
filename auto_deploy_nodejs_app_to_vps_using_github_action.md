@@ -1,4 +1,4 @@
-# Node.js Github Action Deployment
+# Node.js Auto Github Action Deployment
 
 ## 1. Generate ssh key
 ```bash
