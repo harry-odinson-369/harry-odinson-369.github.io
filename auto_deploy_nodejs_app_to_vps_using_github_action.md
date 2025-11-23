@@ -18,7 +18,7 @@ Copy the private key to clipboard.
 - SSH_USER = The vps user (ex. root)
 - WORK_DIR = The current working directory (optional)
 - BRANCH = The repository branch (ex. main) (optional)
-- APP_NAME = The project folder name that contain nodejs code.
+- APP_NAME = The repository name.
 - GH_USERNAME = The Github Username.
 - GH_REPO_TOKEN = The Github token that give permission to private repository.
 ### Now go to Action tab and create a .yml (ex. main.yml) file. inside .yml file should be look like the code below.
