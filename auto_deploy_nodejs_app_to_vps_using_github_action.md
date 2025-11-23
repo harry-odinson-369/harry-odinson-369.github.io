@@ -2,5 +2,15 @@
 
 ## 1. Generate ssh key
 ```bash
-ssh key-gen -t rsa -b 4096
+ssh-keygen -t rsa -b 4096
 ```
+```bash
+cat /root/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+```bash
+cat /root/.ssh/id_rsa
+```
+Then copy the private key to clipboard.
+## 2. Create Github Action secrets.
+### Go to Github repository Page > Settings > Secrets and Variables
+
