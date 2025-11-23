@@ -50,7 +50,7 @@ jobs:
           WORK_DIR: ${{ secrets.WORK_DIR }}
           APP_NAME: ${{ secrets.APP_NAME }}
         run: |
-          ssh ${SSH_USER}@${SSH_HOST} "cd ${WORK_DIR} && rm -rf ${APP_NAME} && git clone --branch ${BRANCH} ${REPO_URL} ${APP_NAME} && cd ${APP_NAME} && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && npm install && npm run start"
+          ssh ${SSH_USER}@${SSH_HOST} "rm -rf ${APP_NAME} && git clone --branch ${BRANCH} ${REPO_URL} ${APP_NAME} && cd ${APP_NAME} && export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh && npm install && npm run start"
 
       - name: Clean up SSH
         run: rm -rf ~/.ssh
