@@ -160,6 +160,45 @@ server {
         }
 }
 ```
+To prevent access via IP address use this block below 👇
+
+```bash
+# Server Configuration
+# Also Support with WebSocket Server
+
+#This block prevent direct ip access from client
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    return 444; # '444 No Response' closes the connection immediately
+}
+
+#Normal server via domain name access
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/html;
+
+        index index.html index.htm index.nginx-debian.html;
+
+        # domain.com and www.domain.com is the domain that we will buy in the step 9 b>
+        server_name domain.com www.domain.com;
+
+        location / {
+                proxy_pass http://localhost:8080;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_cache_bypass $http_upgrade;
+        }
+}
+```
 
 ```bash
 # Check the NGINX config file format is correct or not
@@ -179,6 +218,8 @@ Now add some dns record to the domain:
 - Add A record for www and value is the vps ip address same as A record above.
 
 It may take a bit to propogate. after that you should be able to access your website through the domain name as well.
+
+Note: The domain name should be match with the nginx config file above!
 
 ## 10. Add SSL with LetsEncrypt
 ```bash
