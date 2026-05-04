@@ -162,7 +162,7 @@ server {
 ```
 To prevent access via IP address use this block below 👇
 
-```bash
+```nginxconf
 # Server Configuration
 # Also Support with WebSocket Server
 
