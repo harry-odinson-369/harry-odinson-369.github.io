@@ -1,4 +1,6 @@
 {
-   "name":"TEST URL",
-   "script":"alert('HI')"
+   "script":"alert('HI')",
+   "allowed_origins":[
+      "https://www.google.com"
+   ]
 }
